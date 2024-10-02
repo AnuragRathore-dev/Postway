@@ -24,7 +24,7 @@ const signUp = asyncHandler(async (req, res) => {
   // Get User Details From Front-End
   const { firstName, middleName, lastName, username, email, password } =
     req.body;
-  // Validation - Not Empty
+  // Validation - Not Empty 
   if (
     [firstName, lastName, username, email, password].some(
       (field) => field?.trim() === ""
